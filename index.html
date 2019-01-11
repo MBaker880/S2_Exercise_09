@@ -19,6 +19,7 @@
    <title>Red Ball Survey</title>
    <link href="rb_reset.css" rel="stylesheet" />
    <link href="rb_styles.css" rel="stylesheet" />
+   <link rel="stylesheet" href="rb_forms.css" />
    <script src="rb_formsubmit.js"></script>
 
 </head>
@@ -58,7 +59,7 @@
             <legend>Customer Information</legend>
             <div class="formRow">
                 <label for="name">Name*</label>
-                <input name="custName" id="name" type="text" placeholder="first and last name" />
+                <input name="custName" id="name" type="text" placeholder="First and Last Name" />
             </div>
             <div class="formRow">
                 <label for="street">Street Address</label>
@@ -66,7 +67,7 @@
             </div>
             <div class="formRow">
                 <label for="city">City</label>
-                <input name="custCity" id="city" type="text" value="OrmondBeach" />
+                <input name="custCity" id="city" type="text" value="Ormond Beach" />
             </div>
             <div class="formRow">
                 <label for="state">State</label>
@@ -84,6 +85,16 @@
                 <label for="mail">E-mail*</label>
                 <input name="custEmail" id="mail" type="email" />
             </div>
+            <div class="formRow">
+                <label for="info">Where did you here about us? <br>(select all that apply)</label>
+                <select name="infoSrc" id="info" size="5" multiple>
+                    <option value="internet">Internet</option>
+                    <option value="mag">Magazine</option>
+                    <option value="news">Newspaper</option>
+                    <option value="word">Word of Mouth</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
             <div class="formRow">
                 <label for="dish">Whats your favorite dish?</label>
@@ -100,7 +111,7 @@
 
             <div class="formRow">
                 <label for="dineSpin">How many times do you dine out per month?</label>
-                <input name="dineOut" id="dintSpin" type="number" value="1" step="1" min="0" max="20" />
+                <input name="dineOut" id="dineSpin" type="number" value="1" step="1" min="0" max="20" />
             </div>
 
             <input  name="mailMe" id="mailCB" value="yes" type="checkbox">
